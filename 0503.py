@@ -1,5 +1,4 @@
 import sys
-'''
 # # # cw02
 
 # # zad01
@@ -45,11 +44,10 @@ else:
 for x in range(101):
     if not (x%5):
         print(x)
-'''
 
 # # zad08
 
-'''
+
 # # zad09
 x = input("Podaj liczbe wielocyfrowa: ")
 x = int(x)
@@ -69,12 +67,10 @@ for i in range(n+1):
 
 # # zad11
 
-
 # # zad12
 for x in range(1,11):
     for y in range(1,11):
         print(str(x)+ "*" + str(y) + " = " + str(x*y)+ "\n")
-'''
 
 # # zad15
 x='a'
