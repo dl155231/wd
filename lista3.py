@@ -1,9 +1,8 @@
 from liczbyZespolone import czesci, dodOdej
+import ciagi as c
 import math as m
 import random as r
-# TODO:
-#  zad.6
-#  zad.12
+
 
 # zad.1
 A = [1/x for x in range(1, 11)]
@@ -22,14 +21,14 @@ lista = [macierz[index][index] for index in range(4)]
 
 
 # zad.3
-slownik = {
+produkty = {
     "ciasto": "kg",
     "cukier": "kg",
     "cytryna": "szt",
     "zapalniczka": "szt",
     "woda": "l"
 }
-slownik2 = [key for key, value in slownik.items() if value == "szt"]
+sztuki = [key for key, value in produkty.items() if value == "szt"]
 # print(slownik2)
 
 
@@ -53,10 +52,10 @@ def porFunkcji(a1, b1, a2, b2):
 
 
 # zad.6
-def promien_okregu(x, y, a=0, b=0):
+def promienOkregu(x, y, a=0, b=0):
     promien = m.sqrt((x-a)**2+(y-b)**2)
     return promien
-print(promien_okregu(3,3))
+# print(promienOkregu(3,3))
 
 
 # zad.7
@@ -96,5 +95,3 @@ a = complex(3, 4)
 b = complex(4, 3)
 # czesci.rzeczywista(a)
 # dodOdej.odejmij(a, b)
-
-# zad.12
