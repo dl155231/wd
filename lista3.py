@@ -53,7 +53,10 @@ def porFunkcji(a1, b1, a2, b2):
 
 
 # zad.6
-# def promien_okregu(a = 0, b = 0):
+def promien_okregu(x, y, a=0, b=0):
+    promien = m.sqrt((x-a)**2+(y-b)**2)
+    return promien
+print(promien_okregu(3,3))
 
 
 # zad.7
@@ -74,7 +77,7 @@ def iloczynCiagu(* liczba):
     if len(liczba) == 0:
         return 0
     for i in liczba:
-        iloczyn*=i
+        iloczyn *= i
     return iloczyn
 # print(iloczynCiagu(1,2,3,4,5))
 
