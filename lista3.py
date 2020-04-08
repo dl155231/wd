@@ -75,9 +75,10 @@ def iloczynCiagu(* liczba):
     iloczyn = 1
     if len(liczba) == 0:
         return 0
-    for i in liczba:
-        iloczyn *= i
-    return iloczyn
+    else:
+        for i in liczba:
+            iloczyn *= i
+        return iloczyn
 # print(iloczynCiagu(1,2,3,4,5))
 
 
