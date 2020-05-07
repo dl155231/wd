@@ -10,10 +10,10 @@ gatunki = iris['species'].unique()
 
 
 for i in range(0, 3):
-    species_df = iris[iris['species'] == gatunki[i]]
+    gatunki_df = iris[iris['species'] == gatunki[i]]
     plt.scatter(
-        species_df['sepal_length'],
-        species_df['sepal_width'],
+        gatunki_df['sepal_length'],
+        gatunki_df['sepal_width'],
         color=colors[i],
         alpha=0.7,
         label=gatunki[i]
